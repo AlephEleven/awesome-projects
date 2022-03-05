@@ -62,24 +62,32 @@ class List:
         '''
         return [f(indx, i) for indx, i in enumerate(ls)]
 
-    def flatten(ls):
+    def flatten(ls, depth=True):
         '''
         List.flatten(list)
 
-        Flattens list in all depths
+        Flattens list in all depths, or one layer if depth set to false
         - ls = [x1, x2, x3 ...]
-
-        Ex: [[1,5,3], 0, [[5], 2, [[-1]]]]
+        - depth = bool
+        
+        Ex: [[1,5,3], 0, [[5], 2, [[-1]]]], True
 
         returns [1, 5, 3, 0, 5, 2, -1]
+
+        Ex: [[1,5,3], 0, [[5], 2, [[-1]]]], False
+
+        returns [1, 5, 3, 0, [5], 2, [[-1]]]]
         '''
-        match ls:
-            case []:
+        match ls, depth:
+            case [], _:
                 return []
-            case [[*h], *t]:
+            case [[*h], *t], True:
                 return List.flatten(h)+List.flatten(t)
-            case [h, *t]:
-                return [h]+List.flatten(t)
+            case [[*h], *t], False:
+                return [i for i in h]+List.flatten(t, depth)
+            case [h, *t], _:
+                return [h]+List.flatten(t, depth)
+
 
     def filter(f, ls):
         '''
