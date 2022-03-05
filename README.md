@@ -7,7 +7,7 @@ Applications of Python 3.10's match function
 
 ### List matching
 
-List functions based on OCamel List module (now less type-restricted)
+List functions based on OCamel List module (now less type-restricted 🦀🦀🦀)
 
 ### General Trees
 
