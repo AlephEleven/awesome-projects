@@ -16,7 +16,8 @@ class Node:
 
     returns an object of node type
 
-    Ex:
+    sample tree:
+    
     t = Node(1,[
                 Node(2,[]),
                 Node(3,
@@ -107,6 +108,57 @@ class Tree:
                 case Node(_, ls):
                     return List.flatten(List.mapi(lambda path, route: (path_to_leaves_h(lis+[path], route)), ls), False)
         return path_to_leaves_h([], t)
+
+    def path_to_val(t, val):
+        '''
+        Tree.path_to_val(Node, val)
+
+        Get all paths to value from root of tree, similar to path_to_leaves
+        - t = <Node(v, ls)>
+        - val = object()
+        
+        Ex: sample tree, 6
+
+        returns [[1,1]]
+
+        Throws exception if val not in list
+        returns [[]] if val is in root
+        '''
+        def path_to_val_h(lis, t, val):
+            match t, val:
+                case Node(v, ls), vl:
+                    ls_res = [lis] if vl==v else []
+                    return ls_res+List.flatten(List.mapi(lambda path, route: (path_to_val_h(lis+[path], route, val)), ls), False)
+        
+        res = list(filter(None, path_to_val_h([], t, val)))
+
+        if t.val == val:
+            return [[]]+res
+        elif not res:
+            raise Exception("path_to_val: val not contained in Tree")
+        
+        return res
+
+    def val_occurances(t, val):
+        '''
+        Tree.val_occurances(Node, val)
+
+        Get total occurances of value in tree
+        - t = <Node(v, ls)>
+        - val = object()
+
+        Ex: sample tree, 6
+
+        return 1
+
+        Returns 0 if there are no occurances
+        '''
+        try:
+            res = len(Tree.path_to_val(t, val))
+        except:
+            res = 0
+
+        return res
 
     def get_path_val(t, path):
         '''
