@@ -20,6 +20,8 @@ Extra credit assignment done for Discrete Structures, make a program that proves
 
 Implements additons to Racket graphics in order to handle displaying courtyards, and divde-and-conquer to solve problem.
 
+Solves a 2^7 x 2^7 grid in under 10 seconds!
+
 ## Matrices
 
 A list of functions that I wrote during my time in linear algebra, based on what we were learning.
