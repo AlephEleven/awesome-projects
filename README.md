@@ -3,7 +3,7 @@ list of projects that I thought were really cool (also a way for me to get use t
 
 ## Matrices
 
-A list of functions that I wrote during my time in linear algebra, based on what we were learning at that time.
+A list of functions that I wrote during my time in linear algebra, based on what we were learning.
 
 Handles square matrices only, since a majority of the topics used them.
 
