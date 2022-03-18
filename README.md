@@ -45,3 +45,7 @@ Finds the error bound for a function, given the same inputs as taylor series, an
 - Collision Test
 
 Checks whether two system of equations collide with each other, and returns the points at which they do.
+
+### CPU simulator
+
+Old project I made based on Tom Scott's video on how the fetch-cycle process works https://www.youtube.com/watch?v=Z5JC9Ve1sfI
