@@ -14,6 +14,12 @@ List functions based on OCamel List module (now less type-restricted 🦀🦀�
 
 Tree functions that take advatange of matching via pattern matching Node class, and matching multiple items at once
 
+## Tiling the Courtyard
+
+Extra credit assignment done for Discrete Structures, make a program that proves the result of the Inductive-proof triomino tiling probem, see https://math.hmc.edu/funfacts/inductive-tiling/.
+
+Implements additons to Racket graphics in order to handle displaying courtyards, and divde-and-conquer to solve problem.
+
 ## Matrices
 
 A list of functions that I wrote during my time in linear algebra, based on what we were learning.
