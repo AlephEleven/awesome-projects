@@ -1,6 +1,14 @@
 # awesome-projects
 list of projects that I thought were really cool (also a way for me to get use to github more)
 
+## Matrices
+
+A list of functions that I wrote during my time in linear algebra, based on what we were learning at that time.
+
+Handles square matrices only, since a majority of the topics used them.
+
+In addition there is an attempt to make a chemical equation balancer below.
+
 ## Matching
 
 Applications of Python 3.10's match function
