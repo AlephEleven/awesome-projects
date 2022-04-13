@@ -1,6 +1,10 @@
 # awesome-projects
 list of projects that I thought were really cool (also a way for me to get use to github more)
 
+## String type
+
+Set of string-related methods for C, implementing a struct stringt which works similarly to strings in higher level languages, while still requiring pointers for data manipulation.
+
 ## Matching
 
 Applications of Python 3.10's match function
