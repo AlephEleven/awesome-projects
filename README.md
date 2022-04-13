@@ -28,7 +28,7 @@ Solves a 2^7 x 2^7 grid in under 10 seconds!
 
 ## Matrices
 
-A list of functions that I wrote during my time in linear algebra, based on what we were learning.
+A list of functions that I wrote during my time in Linear Algebra, based on what we were learning.
 
 Handles square matrices only, since a majority of the topics used them.
 
