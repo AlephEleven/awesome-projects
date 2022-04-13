@@ -20,9 +20,9 @@ Tree functions that take advatange of matching via pattern matching Node class, 
 
 ## Tiling the Courtyard
 
-Extra credit assignment done for Discrete Structures, make a program that proves the result of the Inductive-proof triomino tiling probem, see https://math.hmc.edu/funfacts/inductive-tiling/.
+Extra credit assignment done for Discrete Structures, makes a program that proves the result of the Inductive-proof triomino tiling probem, see https://math.hmc.edu/funfacts/inductive-tiling/.
 
-Implements additons to Racket graphics in order to handle displaying courtyards, and divde-and-conquer to solve problem.
+Implements additons to Racket graphics in order to handle displaying courtyards, and divide-and-conquer to solve problem.
 
 Solves a 2^7 x 2^7 grid in under 10 seconds!
 
