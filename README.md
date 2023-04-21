@@ -1,6 +1,13 @@
 # awesome-projects
 list of projects that I thought were really cool (also a way for me to get use to github more)
 
+## Machine Learning
+
+### Where's Waldo
+
+Short conv-net in PyTorch that creates a dataset based gaussian noise with the goal of finding where's waldo.
+
+
 ## String type
 
 Set of string-related methods for C, implementing a struct stringt which works similarly to strings in higher level languages, while still requiring pointers for data manipulation.
